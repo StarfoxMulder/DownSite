@@ -1,0 +1,103 @@
+<main class="container">
+	<div class="row">
+		<section class="main-section col-xs-7">
+			<h2>Portfolio</h2>
+
+			<div class="row">
+			<div class="work col-xs-4">
+				<a class="project" href="https://lickinleukemia.herokuapp.com/" data-info="I don't only make alien/conspiracy/paranormal themed applications - I also volunteered to create this website for Lickin' Leukemia, a 501(c)(3) nonprofit! Additionally, I set up  the organization for various fund raising and money transfer platforms as a verified charity (Amazon Smile, PayPal, Square Cash, and Patreon).
+
+				I'm utilizing Materialize CSS and JavaScript CDNs for layout and parallax scrolling, handlebars for the various pages, and cheerio.js and APIs to populate MongoDB with immunotherapy news articles." data-title="Lickin' Leukemia">
+					<img src="assets/images/lickinL.PNG">
+					<div class="col-xs-12">
+					<h3>Lickin' Leukemia</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="work col-xs-4">
+				<a class="project" href="https://peaceful-sea-72109.herokuapp.com/" data-info="Cryptids are creatures whose existance has yet to be - or cannot entierly be - proved or disproved my science (think Bigfoot or The Loch Ness Monster).
+				Cryptogifs is a search application that get's the first 10 results for your search term via Giphy's API, dispalays the static image by default, and onClick toggles between the static image or animated gif.
+				Currently, search terms added by users are not persistent - there is not a database for storing new items; the initial terms are hardcoded within a JavaScript file and user entries are stored on the client within a JavaScript array." data-title="Cryptogifs">
+					<img src="assets/images/cryptogif2.png">
+					<div class="col-xs-12">
+					<h3>Cryptogifs</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="work col-xs-4">
+				<a class="project" href="https://starfoxmulder.github.io/soundboard/forBrian/SoundboardC.html" data-info="Over the course of the show's history, the Unbelievable Podcast has accumulated over 90 soundclips that have become an integral part of the program through regular playback.
+
+				After presenting the show's host with a limited prototype of a webapp version of the soundboard, I was given access to the full catalog of soundclips to create the offical soundboard for the podcast.
+
+				Each sound tile is created as an iteration of a for loop over an array of objects with key/value pairs for the sound's title, image url, and mp3 url.  In the near future I'd like to try my hand at native app design to turn this into a downloadable mobile app." data-title="Soundboard">
+					<img src="assets/images/soundboard2.png">
+					<div class="col-xs-12">
+					<h3>Soundboard</h3>
+					</div>
+				</a>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="work col-xs-4">
+				<a class="project" href="http://mentorproject.herokuapp.com/" data-info="As a group project, my team decided to create a webapp that would reduce the transaction costs for people considering higher education by combining useful articles, videos and a mentor network for navigating this highly complex and personal experience a single location.
+
+				Utilized Semantic-UI for modals, page-section division and anchoring within a single page; Google's Geocoder, InfoWindow, and Custom Search APIs getting location data, displaying map icons, and curating material for the 'corkboard' section; Mentors and Mentees are stored in Firebase and assigned a specific icon based on the value for their 'affiliation' field in the database." data-title="The Mentor">
+					<img src="assets/images/mentor2.png">
+					<div class="col-xs-12">
+					<h3>The Mentor</h3>
+					</div
+				</a>
+			</div>
+
+			<div class="work col-xs-4">
+				<a class="project" href=" https://protected-dusk-19073.herokuapp.com/" data-info="I thought scraping websites was so kitsch-ish-ly awesome that I made a news agregator for my friends who are into cryptids, aliens, and conspiracy theories (all that good stuff).
+				For scraping I am using Cheerio.js and storing results in MongoDB.  Node, Express, and Mongoose on the backend; HTML templating with Handlebars.
+				News aggregeation but I wanted to encourage interaction wtih note/comment posting feature on each article (as an associated Note model to make for easy population or record deletion). From there I started rolling out user profile, login, article storage, and private messaging -- however, these features are still in development.  I am working on incorporating those features into Protected Dusk as well as transitioning to Vue.js for a frontend framework." data-title="Protected Dusk">
+					<img src="assets/images/protecteddusk2.png">
+					<div class="col-xs-12">
+					<h3>Protected Dusk</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="work col-xs-4">
+				<a class="project" href="https://aqueous-fortress-37726.herokuapp.com/" data-info="A fun little application quizzing the user on their knowledge of obscure and TOTALLY TRUE FACTS about peopel who have encountered extra-terrestrial life-forms and the aliens who love them.  The game is initiated onClick within the main container, triggering the start of a 120 second countdown timer (setTimeout method combined with a conversion function to return the time remaining in minutes:seconds) and 10 question quiz.  User responses are logged for calculating a final score on this very important information." data-title="Contactee Trivia">
+					<img src="assets/images/trivia2.png">
+					<div class="col-xs-12">
+					<h3>Contactee Trivia</h3>
+					</div>
+				</a>
+			</div>
+
+		</section>
+
+		<section>
+			<div id="infoCont" class="col-xs-4 col-xs-offset-1">
+				<p id="projectTitle"></p>
+				<div id="projectInfo"></div>
+			</div
+		</section>
+	</div>
+
+	<div class="row">
+		<section id="sidebar" class="col-xs-offset-2 col-xs-3">
+			<div id="connect" class="row">
+				<h2 class="col-xs-12">Connect with Me</h2>
+			</div>
+
+			<div class="row">
+				<ul id="SocialImages" class="col-xs-12">
+					<li class="socialIconLI"><a href="https://github.com/StarfoxMulder" class="socialIcons"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+					<li class="socialIconLI"><a href="https://www.linkedin.com/in/charles-prestia-2b156317?trk=hp-identity-name" class="socialIcons"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+					<li class="socialIconLI"><a href="http://stackoverflow.com/users/6627907/starfox-mulder" class="socialIcons"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	</div>
+</main>
+

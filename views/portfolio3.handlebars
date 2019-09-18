@@ -1,0 +1,183 @@
+<main>
+
+  <section class="no-gutters" id="homeSection">
+    <section class="row" id="home">
+      <div class="old-modal-section col-12">
+        <div class="introDiv row justify-content-center">
+          <div class="old-modal-dialog col-12 col-lg-6">
+            <div class="old-modal-content">
+              <div class="old-modal-body">
+                <p>Hello, I am Charles Jude Prestia.</p>
+                <p>I am a full-stack Web Developer.</p>
+              </div>
+              <div class="old-modal-footer">
+                <button id="ViewMyWork">view my work <span id="old-modalArrow"><i class="fal fa-arrow-right"></i></span></button>
+              </div>
+            </div>
+          </div>
+          <video autoplay muted loop id="myVideo">
+            <source src="assets/images/Particle_background1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+  </section>
+  <ul class="nav justify-content-center" id="topNav">
+    {{!-- <li class="nav-item" id="navProjects">
+      <a class="nav-link" href="#">Projects</a>
+    </li> --}}
+    <li class="nav-item" id="navAbout">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item" id="navProjects">
+      <a class="nav-link" href="#">Projects</a>
+    </li>
+    <li class="nav-item" id="navContact">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+
+  <section class="container-fluid" id="portCont">
+    <section class="row" id="aboutMe">
+      <div class="col-2">
+        <h2>About</h2>
+      </div>
+      <div class="col-12 no-gutters" id="about-section">
+        <div class="row aboutRow">
+          <div class="col-12 col-lg-6" id="about-text">
+            <p>Four years ago, I struggled with managing report data until my friend Kyle introduced me to Excel
+              Macros. With my love of solving problems through innovative solutions, I found perfect harmony in
+              software programming. I started creating automated workbooks and holding training sessions on Excel for
+              my co-workers. I made Excel fun. </p>
+            <p>Soon I was teaching myself front-end languages at 3am, ultimately leading me to attending The Coding
+              Bootcamp at UNC Chapel Hill.</p>
+            <p>Since graduating, I've worked in development positions at Lenovo and Verizon, continuing to expand my
+              skills</p>
+            <p>I primarily work in HTML, CSS, and JavaScript</p>
+            <p>But I'm not afraid to challenge myself with new languages
+              and frameworks. Below you'll see projects utilizing:
+              <table id="skillTable">
+                <tr class="skillRow">
+                  <td>React</td>
+                  <td>NodeJs</td>
+                  <td>Python</td>
+                </tr>
+                <tr class="skillRow">
+                  <td>Django</td>
+                  <td>Vue</td>
+                  <td>and Others</td>
+                </tr>
+              </table>
+              {{!-- <br> React<br> NodeJS<br> Python<br> Django<br> Vue <br>and others.</p> --}}
+            </p>
+            {{!--
+            <hr>
+            <p>I am blessed to have my wife, our dog, our cats, our broader family and our friends - but clearly
+              not
+              with great PhotoShop skills.</p>
+            <p>Brianna and I are working toward having children, but in the meantime StarFox (5 yearold Lab/Pyrenees
+              mix), Small (the little butthead in my arms), and Ari (the perfect angel on Brianna's lap) are the little
+              weirdos we're lovingly doting on.</p> --}}
+          </div>
+          <div class="col-12 col-lg-6" id="about-pic">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container-fluid" id="projCont">
+    <section class="row" id="portfolio">
+      <div class="col-2">
+        <h2>Projects</h2>
+      </div>
+      <div class="col-12 no-gutters" id="work-section">
+        <div class="row projRow">
+          <div id="JPDevelopment" class="projItem col-12 col-md-6 col-lg-4 " data-title="JP Development" data-tech="Python   Django   PostgreSQL"
+            data-about="Fully functional website for a fictional real estate business.  Potential buyers can search or filter listings based on a number of criteria, make inquiries directly about a particular property, and make an account to check on the status of thier inquiries. The company receives an email about each inquiery, realtors can see inqueries about their properties, and the admin panel allows for full control over the whole process."
+            data-url="http://judepdevelopment.com/">
+            <img class="placeholder" src="assets/images/JPD1.JPG">
+            <h3 class="projTitle">
+              <span>JP Development</span>
+            </h3>
+          </div>
+          <div id="Lickin" class="projItem col-12 col-md-6 col-lg-4" data-title="Lickin' Leukemia" data-tech="Handlebars   JavaScript   Node   MongoDB"
+            data-about="Production website for Lickin' Leukemia, a 501c3 charitable organization dedicated to improving the lives of families and individuals with leukemia as well as providing funds for groundbreaking immunotherapy research.  100% of donations go directly to their cause.  Here you can find out about upcoming events, view pictures from previous fund raisers, or see the latest in news about immunotherapy research. Visit and donate today!"
+            data-url="http://www.lickinleukemia.org">
+            <img class="placeholder" src="assets/images/LL1.JPG">
+            <h3 class="projTitle"><span>Lickin' Leukemia</span></h3>
+          </div>
+          <div id="Devsconnect" class="projItem col-12 col-md-6 col-lg-4" data-title="DevsConnect" data-tech="React   Node   MongoDB"
+            data-about="A social network for developers.  Create a profile to display your skills, work history, and credentials.  Create conversations where other developers can up vote, down vote, or comment on your post!"
+            data-url="http://www.devsconnect.com/">
+            <img class="placeholder" src="assets/images/DC1.JPG">
+            <h3 class="projTitle"><span>DevsConnect</span></h3>
+          </div>
+          {{!--
+        </div>
+        <div class="row projRow"> --}}
+          <div class="projItem col-12 col-md-6 col-lg-4" data-title="Unbelievers Podcast" data-tech="Bootstrap   JavaScript   Node"
+            data-about="Production website for a podcast that covers everything strange, weird, and all around unbelievable in world.  The show is highly engaged with it's audience through weekly polls related to the previous episode, games with listeners as contestants, and regular shipments of good will packages for financial donors. Since I'm occasionally on episodes as 'The CodeHost from Washington, DC' I'd be remise if I didn't plug The Unbelievers Podcast in my portfolio, but be warned -- we are crass, foul mouthed, and well deserving of our Explicit tag on all podcasting services."
+            data-url="https://www.unbelieverspodcast.com/">
+            <img class="placeholder" src="assets/images/UP1.JPG">
+            <h3 class="projTitle"><span>Unbelievers Podcast</span></h3>
+          </div>
+          {{!-- </div>
+        <div class="row projRow"> --}}
+          <div class="projItem col-12 col-md-6 col-lg-4" data-title="Vue Poster Shop" data-tech="Vue.js   Imgur API   Node"
+            data-about="A Vue application for searching and 'purchasing' posters.  Entering a term into the search bar returns available products that you can add to a cart for checkout.  Adding new or increasing/decreasing the quantity of existing items automatically updates the checkout total sum cost of the order.  The products are generated by requesting images taged with that term from Imgur, filtering out NSFW and animated results, then combining the image and title into a product template.  Initially the view of products is limited to 15, but if the user scrolls down passed the 15th item, more results are populated creating a sort of Infinite Scrolling Feed."
+            data-url="https://vuejs-poster-shop-jude.herokuapp.com/">
+            <img class="placeholder" src="assets/images/PS1.JPG">
+            <h3 class="projTitle"><span>Vue Poster Shop</span></h3>
+          </div>
+          <div class="projItem col-12 col-md-6 col-lg-4" data-title="Unbelievable Soundboard" data-tech="Bootstrap   JavaScript   GitPages"
+            data-about="Before the Unbelievers Podcast there was The Unbelievable Podcast.  Although The Unbelievable Podcast is no longer recording new episodes, while the show was active it had a highly engaged audience who regularly referenced soundboard clips used on the show.  I reached out to the show's host with an MVP protoype for a soundboard program where listeners could play their favorite clips where ever and whenever they wanted -- he excitedly gave me the green light to build and publish this site for everyone to enjoy.  Click on the header for a random soundboard clip or search for your favorite drop.  Scroll down to the bottom for full songs used on the show and for a toggle control that allows for soundboard clips to be played over eachother!"
+            data-url="http://unbelievablesoundboard.com/">
+            <img class="placeholder" src="assets/images/USB1.JPG">
+            <h3 class="projTitle"><span>Unbelievable Soundboard</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container-fluid" id="contactCont">
+    <section class="row no-gutters" id="contact">
+      <div class="col-2">
+        <h2>Contact</h2>
+      </div>
+      <div class="col-12 no-gutters" id="contact-section">
+        <div class="row contactRow justify-content-center">
+          {{!-- <form id="contact-form" action="https://jumprock.co/mail/JudeEmail" method="post"> --}}
+            <div class="col-12" id="tagline">
+              <p id="emailGreeting">Have a question or want to work together?</p>
+              <p id="emailSuccess" class="alert-success hidden">Thank you for reaching out! I will be in contact with
+                you shortly.</p>
+            </div>
+            <form id="contact-form" class="col-12 col-lg-10">
+              <input type="text" name="name" placeholder="Name" id="name-field" />
+              <input type="text" name="email" placeholder="Email Address" id="email-field" />
+              <textarea type="text" name="message" placeholder="Message" id="message-field"></textarea>
+              <button type="submit">Send <i class="fal fa-paper-plane"></i></button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="projTitleModal">Project Title</p>
+          <p class="projTechModal">built using these</p>
+          <p class="projAboutModal">one or two sentences about this project</p>
+        </div>
+        <div class="modal-footer">
+          <a id="projVisitModal" href="" target="_blank">visit project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
