@@ -1,0 +1,94 @@
+html {
+	/* height: 100%;
+	padding: 0; */
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	background-color: #051411;
+}
+
+main {}
+
+/*//// DOWN Nav /////*/
+nav {
+	width: 100px;
+	height: 100vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	border-right: 1px solid #FF7C7C;
+}
+
+.navPlaceholder {
+	height: 100%;
+}
+
+.menuIcon {
+	width: 80%;
+	padding-top: 10px;
+	height: 70px;
+	margin: auto;
+}
+
+.logoImg {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+}
+
+.logoImg>img {
+	margin: auto;
+	display: block;
+}
+
+/*/////  GENERAL Header & Footer  /////*/
+header {
+	width: 100%;
+}
+
+li>a {
+	text-decoration: none;
+}
+
+.coral {
+	color: #FF7C7C;
+}
+
+footer {}
+
+/*/////  INDEX/DEFAULT  /////*/
+.taglineTop {
+	font-size: 13px;
+}
+
+.taglineBottom {
+	font-size: 48pt;
+	letter-spacing: 2.2px;
+	line-height: 70px;
+}
+
+/*/////  Side Nav  /////*/
+
+
+/*/////  ABOUT PAGE  /////*/
+
+
+/*///// CONTACT Component /////*/
+
+
+/*/////  PORTFOLIO PAGE  /////*/
+
+
+/*---Media Queries--*/
+/*
+@media only screen and (max-width: 980px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 640px) {
+}
+*/
