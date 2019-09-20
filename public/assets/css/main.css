@@ -11,6 +11,15 @@ body {
 
 main {}
 
+.container-fluid {
+	padding: 0;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 /*//// DOWN Side Nav /////*/
 nav {
 	width: 100px;
@@ -53,6 +62,10 @@ header {
 	width: 100%;
 }
 
+.topNav {
+	width: 100%;
+}
+
 .topNavList {
 	width: 100%;
 	margin-top: 30px;
@@ -64,6 +77,11 @@ header {
 
 li.nav-item>a {
 	color: #fff;
+	text-decoration: none;
+}
+
+li.nav-item>a:hover {
+	color: #FF7C7C;
 	text-decoration: none;
 }
 
@@ -101,6 +119,14 @@ footer {}
 	font-size: 48pt;
 	letter-spacing: 2.2px;
 	line-height: 70px;
+}
+
+#officeImg {
+	background-image: url('./assets/immages/office.jpg');
+}
+
+#officeText {
+	background-color: #fff;
 }
 
 /*/////  Side Nav  /////*/
