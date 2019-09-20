@@ -9,7 +9,9 @@ body {
 	background-color: #051411;
 }
 
-main {}
+.mainCol {
+	padding: 0;
+}
 
 .container-fluid {
 	padding: 0;
@@ -21,7 +23,7 @@ main {}
 }
 
 /*//// DOWN Side Nav /////*/
-nav {
+.navCol {
 	width: 100px;
 	height: 100vh;
 	position: -webkit-sticky;
@@ -29,6 +31,7 @@ nav {
 	float: left;
 	top: 0;
 	border-right: 1px solid #FF7C7C;
+	padding: 0
 }
 
 .navPlaceholder {
@@ -112,21 +115,58 @@ footer {}
 }
 
 .taglineTop {
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .taglineBottom {
-	font-size: 48pt;
+	font-size: 64pt;
 	letter-spacing: 2.2px;
-	line-height: 70px;
+	line-height: 85px;
+	font-weight: 700;
+	padding-right: 5%;
+}
+
+#officeBreak {
+	height: 100vh;
 }
 
 #officeImg {
-	background-image: url('./assets/immages/office.jpg');
+	background-image: url('/assets/images/office.jpg');
+	background-size: cover;
+	background-position: bottom;
 }
 
 #officeText {
 	background-color: #fff;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+}
+
+#officeText>p {
+	color: #000;
+	width: 50%;
+	margin: auto;
+}
+
+#caseStudies {
+}
+
+.taglineMid {
+	font-size: 64pt;
+	letter-spacing: 2.2px;
+	line-height: 85px;
+	font-weight: 700;
+	padding-right: 15%;
+	margin-left: 7%;
+	margin-top: 7%;
+}
+
+.underText {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	margin-top: 50px;
 }
 
 /*/////  Side Nav  /////*/
