@@ -144,12 +144,11 @@ footer {}
 }
 
 #officeText>p {
-	color: #000;
+	color: #818181;
 	width: 50%;
 	margin: auto;
-}
-
-#caseStudies {
+	font-size: 16px;
+	line-height: 32px;
 }
 
 .taglineMid {
@@ -157,7 +156,6 @@ footer {}
 	letter-spacing: 2.2px;
 	line-height: 85px;
 	font-weight: 700;
-	padding-right: 15%;
 	margin-left: 7%;
 	margin-top: 7%;
 }
@@ -167,6 +165,17 @@ footer {}
 	line-height: 20px;
 	font-weight: 400;
 	margin-top: 50px;
+	padding-right: 15%;
+}
+
+.caseStudiesIcons {
+	margin-top: 7%;
+	padding-left: 7%;
+}
+
+.caseIcon {
+	filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(174deg) brightness(96%) contrast(85%);
+	filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(2232%) hue-rotate(199deg) brightness(120%) contrast(97%);
 }
 
 /*/////  Side Nav  /////*/
