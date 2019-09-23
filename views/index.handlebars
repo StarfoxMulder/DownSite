@@ -60,6 +60,49 @@
 		<div class="col-4"><img class="caseIcon" src="/assets/images/Logo2.png" /></div>
 	</section>
 	<section class="row" id="caseStudiesContent">
-
+		<div class="col-4" id="caseStudiesContentText">
+			<h2>Take a look at<br> some of <br>our most<br>recent work.</h2>
+			<p>Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien sagittis mi, nec aliquam ex
+				neque sit amet neque. Mauris sed risus vitae tellus sollicitudin tempus. </p>
+		</div>
+		<div class='col-8' id="caseStudiesContentImages">
+			<div class="col-12 csImg" id="caseStudy1"><img class="csImage" src="/assets/images/kids.jpg" />
+				<div class="middleTextCont">
+					<div class="middleText">VIEW CASE STUDY</div>
+				</div>
+			</div>
+			<div class="col-12 csImg" id="caseStudy2"><img class="csImage" src="/assets/images/hackers.jpg" />
+				<div class="middleTextCont">
+					<div class="middleText">VIEW CASE STUDY</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="row" id="contactFormSection">
+		<div class="col-6">
+			<form action='/' method='post' class='contact-form col-8' id="contactForm">
+				<div class="form-group col-6 contactTop">
+					<label for="fname">First name</label>
+					<input type="text" class="form-control" id="fname" name="firstname">
+				</div>
+				<div class="form-group col-6 contactTop" id="lnameCont">
+					<label for="fname">Last name</label>
+					<input type="text" class="form-control" id="lname" name="firstname">
+				</div>
+				<div class="form-group col-12">
+					<label for="fname">Email address</label>
+					<input type="text" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group col-12">
+					<label for="subject">Tell us about it.</label>
+					<textarea id="messageBody" class="form-control" name="messageBody"></textarea>
+				</div>
+				<input type="submit" value="SEND IT!" id="submitButton" class="col-5">
+			</form>
+		</div>
+		<div class="col-6">
+			<h2 id="phoneText">We’d love to know more about your project. Get in touch here or give us a call.</h2>
+			<button class="phoneButton">Let's Chat</button>
+		</div>
 	</section>
 </main>

@@ -47,6 +47,8 @@ body {
 
 .menuIcon img {
 	max-width: 100%;
+	margin: 27px auto;
+	display: block;
 }
 
 .logoImg {
@@ -178,6 +180,81 @@ footer {}
 	filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(2232%) hue-rotate(199deg) brightness(120%) contrast(97%);
 }
 
+#caseStudiesContent {
+	height: 1026px;
+	margin-top: 85px;
+}
+
+#caseStudiesContentText {
+	background-color: #fff;
+	padding-top: 50px;
+}
+
+#caseStudiesContentText>h2 {
+	color: #000;
+	width: 293px;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 45px;
+	margin: 50px auto 10px auto;
+}
+
+#caseStudiesContentText>p {
+	width: 293px;
+	padding-right: 25px;
+	margin: auto;
+	font-size: 16px;
+	color: #c8c8c8;
+}
+
+#caseStudiesContentImages {
+	padding: 0;
+}
+
+.csImg {
+	background-color: #FF7C7C;
+	padding: 0;
+	height: 513px;
+	transition: .5s ease;
+	overflow: hidden;
+}
+
+.csImg>img {
+	width: 100%;
+}
+
+.csImg:hover .csImage {
+	opacity: 0.3;
+}
+
+.middleTextCont {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.middleText {
+	color: #fff;
+	font-size: 16px;
+}
+
+.csImg:hover .middleTextCont {
+	opacity: 1;
+}
+
+/* #caseStudy1 {
+	background-image: url('/assets/images/kids.jpg')
+}
+
+#caseStudy2 {
+	background-image: url('/assets/images/hackers.jpg')
+} */
+
 /*/////  Side Nav  /////*/
 
 
@@ -185,7 +262,46 @@ footer {}
 
 
 /*///// CONTACT Component /////*/
+#contactFormSection {
+	margin-top: 75px;
+	height: 1026px;
+}
 
+#contactForm {
+	margin: auto;
+}
+
+#fname {}
+
+#submitButton {
+	background-color: #FF7C7C;
+	color: #fff;
+	padding: 0 15px;
+	border-radius: 25px;
+	border: none;
+	margin-left: 15px;
+}
+
+.contactTop {
+	display: inline-block;
+}
+
+#lnameCont {
+	float: right;
+}
+
+#phoneText {
+	color: #fff;
+	width: 60%;
+}
+
+.phoneButton {
+	background-color: #000;
+	color: #FF7C7C;
+	padding: 0 15px;
+	border-radius: 25px;
+	border: solid 3px #ff7c7c
+}
 
 /*/////  PORTFOLIO PAGE  /////*/
 
