@@ -608,6 +608,15 @@ footer {}
 	background-position: center;
 }
 
+#shapesFader {
+	height: 346px;
+	width: 100%;
+	z-index: 3;
+	bottom: 0;
+	position: absolute;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
 #port2logos,
 #port2cards,
 #port2plans,
