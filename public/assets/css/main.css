@@ -392,6 +392,7 @@ footer {}
 /*/////  PORTFOLIO1 PAGE  /////*/
 #port1Top img {
 	opacity: 0.6;
+	width: 100%;
 }
 
 #HHTagTop {
@@ -471,21 +472,30 @@ footer {}
 #hh14 {
 	height: 556px;
 	background-image: url('/assets/images/hack14.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 #hhBanner {
 	height: 556px;
 	background-image: url('/assets/images/hackers.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 #hh15 {
 	height: 556px;
 	background-image: url('/assets/images/hack15.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 #hh16 {
 	height: 556px;
 	background-image: url('/assets/images/hack16.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 
