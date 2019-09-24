@@ -599,7 +599,9 @@ footer {}
 	height: 707px;
 	background-image: url('/assets/images/port2people.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: auto;
+	background-position: center;
 }
 
 #port2shapesImg {
@@ -615,6 +617,7 @@ footer {}
 	bottom: 0;
 	position: absolute;
 	background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	width: calc(100% - 15px);
 }
 
 #port2logos,
@@ -628,30 +631,37 @@ footer {}
 #port2logosImg {
 	height: 556px;
 	background-image: url('/assets/images/port2logos.png');
-	background-repeat: repeat;
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: auto;
+	background-position: center;
 }
 
 #port2cardsImg {
 	height: 579px;
 	background-image: url('/assets/images/port2cards.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: auto;
+	background-position: center;
 }
 
 #port2plansImg {
 	height: 579px;
 	background-image: url('/assets/images/port2plans.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: auto;
+	background-position: center;
 }
 
 #port2pagesImg {
 	height: 579px;
 	background-image: url('/assets/images/port2pages.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: auto;
+	background-position: center;
 }
 
 /*---Media Queries--*/
