@@ -388,7 +388,105 @@ footer {}
 	border-radius: 25px;
 }
 
-/*/////  PORTFOLIO PAGE  /////*/
+
+/*/////  PORTFOLIO1 PAGE  /////*/
+#port1Top img {
+	opacity: 0.6;
+}
+
+#HHTagTop {
+	position: absolute;
+	margin: 230px 190px;
+	font-size: 80px;
+	font-weight: 400;
+	line-height: 86px;
+	letter-spacing: 2.2px;
+}
+
+#HHTagSub {
+	position: absolute;
+	margin: 430px 195px;
+	color: #05DE88;
+}
+
+#port1White {
+	background-color: #fff;
+}
+
+#grayBlock {
+	background-color: #e9e9e9;
+	color: #000;
+	height: 770px;
+	margin: auto;
+	margin-top: -137px;
+}
+
+#grayBlock p {
+	color: #818181;
+}
+
+#port1HHImg {
+	height: 730px;
+	background-image: url('/assets/images/hack1.png');
+}
+
+#hackText {
+	align-items: center;
+	display: flex;
+	height: 742px;
+}
+
+#hackText p {
+	color: #fff;
+	width: 342px;
+	height: 271px;
+	margin: auto;
+}
+
+#hackComp {
+	height: 742px;
+	background-image: url('/assets/images/hackq2.png');
+}
+
+#hackLogo {
+	height: 647px;
+	background-image: url('/assets/images/hackq3.png');
+}
+
+#hackShirt {
+	height: 647px;
+	background-image: url('/assets/images/hackq4.png');
+}
+
+#port1HHCTA h2 {
+	width: 795px;
+	margin: 100px auto;
+}
+
+.hhPics {
+	margin: auto;
+	margin-bottom: 75px;
+}
+
+#hh14 {
+	height: 556px;
+	background-image: url('/assets/images/hack14.png');
+}
+
+#hhBanner {
+	height: 556px;
+	background-image: url('/assets/images/hackers.jpg');
+}
+
+#hh15 {
+	height: 556px;
+	background-image: url('/assets/images/hack15.png');
+}
+
+#hh16 {
+	height: 556px;
+	background-image: url('/assets/images/hack16.png');
+}
 
 
 /*---Media Queries--*/
