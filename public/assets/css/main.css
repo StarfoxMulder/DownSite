@@ -270,7 +270,8 @@ footer {}
 /*///// CONTACT Component /////*/
 #contactFormSection {
 	margin-top: 75px;
-	height: 1026px;
+	height: 726px;
+	border-bottom: 1px solid #FF7C7C;
 }
 
 #contactForm {
@@ -280,6 +281,8 @@ footer {}
 #fname {}
 
 #submitButton {
+	width: 251px;
+	height: 56px;
 	background-color: #FF7C7C;
 	color: #fff;
 	padding: 0 15px;
@@ -307,11 +310,82 @@ footer {}
 }
 
 .phoneButton {
+	width: 135px;
+	height: 46px;
+	margin-top: 30px;
 	background-color: #000;
 	color: #FF7C7C;
 	padding: 0 15px;
 	border-radius: 25px;
 	border: solid 3px #ff7c7c
+}
+
+
+/*///// FOOTER Section /////*/
+#footerContainer {
+	margin: auto;
+	margin-top: 75px;
+	margin-bottom: 150px;
+	width: 875px;
+	border: solid 1px #ff7c7c;
+	height: 161px;
+}
+
+.locationCont {
+	position: relative;
+	width: 113px;
+	height: 25px;
+	top: 0;
+	left: 0;
+	background-color: #FF7C7C;
+	color: #000;
+	text-align: center;
+}
+
+#address {
+	color: #fff;
+	width: 425px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+#address p {
+	margin-bottom: 0;
+}
+
+#footerLeft {
+	float: left;
+	height: 161px;
+	width: 624px;
+	border-right: 1px solid #FF7C7C;
+}
+
+#footerRight {
+	width: 249px;
+	height: 161px;
+	float: left;
+}
+
+#socialCont {
+	margin: 45px;
+	margin-right: 0;
+}
+
+#socialCont a {
+	width: 45px;
+}
+
+#socialCont img {
+	height: 45px;
+	width: 45px;
+}
+
+#twitter {
+	margin: 0 10px;
+}
+
+#instagram img {
+	border-radius: 25px;
 }
 
 /*/////  PORTFOLIO PAGE  /////*/
