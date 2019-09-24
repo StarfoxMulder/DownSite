@@ -227,6 +227,12 @@ footer {}
 	opacity: 0.3;
 }
 
+#caseStudy2>img {
+	position: relative;
+	width: 132%;
+	right: 32%;
+}
+
 .middleTextCont {
 	transition: .5s ease;
 	opacity: 0;
@@ -290,9 +296,14 @@ footer {}
 	float: right;
 }
 
+#messageBody {
+	height: 230px;
+}
+
 #phoneText {
 	color: #fff;
 	width: 60%;
+	margin-top: 25px;
 }
 
 .phoneButton {

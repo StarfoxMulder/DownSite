@@ -79,8 +79,8 @@
 		</div>
 	</section>
 	<section class="row" id="contactFormSection">
-		<div class="col-6">
-			<form action='/' method='post' class='contact-form col-8' id="contactForm">
+		<div class="col-8">
+			<form action='/sendMessage' method='post' class='contact-form col-8' id="contactForm" onsubmit="event.preventDefault(); handleMessage();">
 				<div class="form-group col-6 contactTop">
 					<label for="fname">First name</label>
 					<input type="text" class="form-control" id="fname" name="firstname">
@@ -97,10 +97,10 @@
 					<label for="subject">Tell us about it.</label>
 					<textarea id="messageBody" class="form-control" name="messageBody"></textarea>
 				</div>
-				<input type="submit" value="SEND IT!" id="submitButton" class="col-5">
+				<input type="submit" value="SEND IT!" id="submitButton" class="col-4">
 			</form>
 		</div>
-		<div class="col-6">
+		<div class="col-4">
 			<h2 id="phoneText">We’d love to know more about your project. Get in touch here or give us a call.</h2>
 			<button class="phoneButton">Let's Chat</button>
 		</div>
