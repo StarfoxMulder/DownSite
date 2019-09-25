@@ -316,19 +316,28 @@ li.nav-item>a:hover {
 #mainRow .taglineBottom {
 	font-size: 53px;
 	margin-bottom: 100px;
-	line-height: 60px;
+	line-height: 55px;
+	letter-spacing: 0.1em;
 }
 
 #leftCol {
 	padding-top: 75px;
 }
-#rightCol {
-}
+
 #researchCont {
-	margin-top: 600px;
+	margin-top: 300px;
 }
+#designCont {
+	margin-top: 75px;
+}
+#executionCont {
+	margin-top: 75px;
+}
+
 .processSteps {
 	color: #fff;
+	margin-top: 25px;
+	margin-bottom: 40px;
 }
 
 .stepText {
@@ -337,14 +346,19 @@ li.nav-item>a:hover {
 	line-height: 32px;
 }
 
+#circlesCont {
+	margin-top: 250px;
+}
+
 .blending {
 	mix-blend-mode: multiply;
 }
 
 .circle {
-	width: 269px;
-	height: 269px;
+	width: 469px;
+	height: 469px;
 	border-radius: 50%;
+	margin:auto;
 }
 
 #tealCircle {
@@ -402,7 +416,7 @@ li.nav-item>a:hover {
 	width: 135px;
 	height: 46px;
 	margin-top: 30px;
-	background-color: #000;
+	background-color: #051411;
 	color: #FF7C7C;
 	padding: 0 15px;
 	border-radius: 25px;
@@ -412,7 +426,7 @@ li.nav-item>a:hover {
 
 /*///// FOOTER Section /////*/
 #footerSection {
-	background-color: #000;
+	background-color: #051411;
 }
 
 #footerContainer {
@@ -431,7 +445,7 @@ li.nav-item>a:hover {
 	top: 0;
 	left: 0;
 	background-color: #FF7C7C;
-	color: #000;
+	color: #051411;
 	text-align: center;
 }
 
@@ -605,8 +619,7 @@ li.nav-item>a:hover {
 
 /*////// PORTFOLIO 2 /////*/
 #port2main {
-	background-color: #000;
-	;
+	background-color: #051411;
 }
 
 #port2Top img {
