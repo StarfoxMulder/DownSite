@@ -265,7 +265,36 @@ footer {}
 
 
 /*/////  ABOUT PAGE  /////*/
+#aboutBenner {}
 
+#aboutBannerImg {
+	height: 790px;
+	background-image: url('/assets/images/aboutBanner.png');
+}
+
+.staffPic {
+	height: 300px;
+	background-image: url('/assets/images/fillerHead.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.staffName {
+	text-align: center;
+	color: #fff;
+	margin: auto;
+}
+
+.staffPosition {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin: auto;
+}
+
+.staffPosition span {
+	text-transform: lowercase;
+}
 
 /*///// CONTACT Component /////*/
 #contactFormSection {
