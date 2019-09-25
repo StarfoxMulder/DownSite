@@ -104,7 +104,6 @@ li.nav-item>a:hover {
 	color: #FF7C7C;
 }
 
-footer {}
 
 /*/////  INDEX/DEFAULT  /////*/
 #fullVH {
@@ -270,19 +269,32 @@ footer {}
 #aboutBannerImg {
 	height: 790px;
 	background-image: url('/assets/images/aboutBanner.png');
+	background-size: cover;
+}
+
+#staffSection {
+	margin-top: 125px;
+	margin-bottom: 125px;
+	border-bottom: 1px solid #FF7C7C;
+}
+
+#staffSection .col-5 {
+	margin-bottom: 75px;
 }
 
 .staffPic {
 	height: 300px;
 	background-image: url('/assets/images/fillerHead.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
 }
 
 .staffName {
 	text-align: center;
 	color: #fff;
 	margin: auto;
+	margin-top: 25px;
 }
 
 .staffPosition {
@@ -357,7 +369,7 @@ footer {}
 
 #footerContainer {
 	margin: auto;
-	margin-top: 75px;
+	margin-top: 150px;
 	margin-bottom: 150px;
 	width: 875px;
 	border: solid 1px #ff7c7c;
@@ -384,6 +396,10 @@ footer {}
 
 #address p {
 	margin-bottom: 0;
+}
+
+.phoneImg {
+	margin-right: 5px;
 }
 
 #footerLeft {
