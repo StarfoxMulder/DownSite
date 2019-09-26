@@ -3,13 +3,18 @@
 		<section class="row topNav">
 			<ul class="topNavList nav">
 				<li class="nav-item" id="about">
-					<a class="nav-link active" href="/">About Us</a>
+					<a class="nav-link active" href="/about">About Us</a>
 				</li>
 				<li class="nav-item" id="process">
 					<a class="nav-link" href="/process">Our Process</a>
 				</li>
-				<li class="nav-item" id="ourWork">
-					<a class="nav-link" href="">Our Work</a>
+				<li class="nav-item dropdown" id="ourWork">
+					<div class="nav-link dropdown-toggle" id="ourWorkDropdown" data-toggle="dropdown" aria-haspopup="true"
+					 aria-expanded="false">Our Work</div>
+					<div class="dropdown-menu" aria-labelledby="ourWorkDropdown">
+						<a class="dropdown-item" href="/portfolio1">Hungry Hackers</a>
+						<a class="dropdown-item" href="/portfolio2">Kajeet</a>
+					</div>
 				</li>
 				<li class="nav-item" id="articles">
 					<a class="nav-link" href="#">Articles</a>

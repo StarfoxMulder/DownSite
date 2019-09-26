@@ -4,25 +4,47 @@
 <head>
   <title>DOWN | A Creative Agency</title>
   <meta name="description" content="A creative agency focused on doing good.">
-  <link rel="icon" type="image/png" href="/assets/images/alien.png">
+  <link rel="icon" type="image/png" href="/assets/images/downD.png">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-  {{!--
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script> --}}
+    crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="/assets/javascript/main.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-1 navCol">
+      <div class="col-1 navCol">
+        <div id="sideNavCont">
+          <div id="closeSideNav"><img src="/assets/images/close.png" /></div>
+          <div class="sideNavCol">
+            <h3 class="sideNavTitle">About Us</h3>
+            <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+              sagittis mi, nec aliquam ex neque sit amet neque. </p>
+          </div>
+          <div class="sideNavCol">
+            <h3 class="sideNavTitle">Our Process</h3>
+            <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+              sagittis mi, nec aliquam ex neque sit amet neque. </p>
+          </div>
+          <div class="sideNavCol">
+            <h3 class="sideNavTitle">Our Work</h3>
+            <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+              sagittis mi, nec aliquam ex neque sit amet neque. </p>
+          </div>
+          <div class="logoImg" id="activeNavLogo">
+            <img src="assets/images/DOWN_Logo.png" />
+          </div>
+        </div>
         <div class="navPlaceholder">
           <div class="menuIcon">
             <img src="assets/images/group-2.png" />
@@ -31,7 +53,7 @@
             <img src="assets/images/DOWN_Logo.png" />
           </div>
         </div>
-      </nav>
+      </div>
 
       {{{ body }}}
     </div>

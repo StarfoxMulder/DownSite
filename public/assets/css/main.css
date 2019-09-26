@@ -31,7 +31,54 @@ body {
 	float: left;
 	top: 0;
 	border-right: 1px solid #FF7C7C;
-	padding: 0
+	padding: 0;
+	z-index: 100;
+	/* overflow-x: hidden; */
+}
+#closeSideNav{
+	width: 100px;
+	border-right: 1px solid #FF7C7C;
+	height: 100vh;
+	/* display: inline-block; */
+	display: block;
+	display: none;
+	z-index: 100;
+	background-color: #051411;
+	float: left;
+}
+#closeSideNav img {
+	margin-left: 28px;
+	margin-top: 30px;
+}
+#sideNavCont{
+	width: 0;
+	display: none;
+	background-color: #051411;
+	transition: 0.5s;
+	z-index: 100;
+	height: 100vh;
+}
+#sideNavCont.activeSideNav {
+	width: calc(100vw - 17px);
+}
+.sideNavCol {
+	padding: 150px 15px;
+	width: 28%;
+	height: 100vh;
+	border-right: 1px solid #FF7C7C;
+	z-index: 100;
+	display: inline-block;
+}
+.sideNavTitle {
+	color: #fff;
+	z-index: 100;
+}
+.sideNavText {
+	color: #818181;
+	font-size: 16px;
+	line-height: 32px;
+	z-index: 100;
+	padding-right: 30%;
 }
 
 .navPlaceholder {
@@ -39,10 +86,13 @@ body {
 }
 
 .menuIcon {
-	width: 80%;
+	width: 100%;
 	padding-top: 10px;
 	height: 70px;
 	margin: auto;
+	z-index: 100;
+	position: absolute;
+		top: 0px;
 }
 
 .menuIcon img {
@@ -53,12 +103,20 @@ body {
 
 .logoImg {
 	position: absolute;
-	bottom: 10px;
+	bottom: 50px;
 	width: 100%;
+}
+#activeNavLogo {
+	display: inline-flex;
+	width: 100%;
+	height: 100vh;
 }
 
 .logoImg>img {
-	margin: auto;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    bottom: 0;
 	display: block;
 }
 
@@ -89,7 +147,36 @@ li.nav-item>a:hover {
 	color: #FF7C7C;
 	text-decoration: none;
 }
+#ourWorkDropdown {
+	color: #fff;
+	text-decoration: none;
+}
 
+#ourWorkDropdown:hover {
+	color: #FF7C7C;
+	text-decoration: none;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+	pointer-events: none;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+.dropdown-menu {
+	background-color: #051411;
+	margin-top: -20px;
+}
+.dropdown-item {
+	color: #fff;
+	background-color: #051411;
+}
+.dropdown-item:hover {
+	background-color: #FF7C7C;
+	color: #fff;
+}
 #chat {
 	padding: 0 15px;
 	border-radius: 25px;
