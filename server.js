@@ -2,7 +2,7 @@ const express = require("express");
 //const mongoose = require("mongoose");
 //const passport = require("passport");
 var exphbs = require('express-handlebars');
-const bodyparser = require("body-parser");
+const bodyParser = require("body-parser");
 var methodOverride = require('method-override');
 const path = require("path");
 var routes = require("./controllers/controller.js");
@@ -25,12 +25,6 @@ app.engine('handlebars', exphbs({
   defaultLayout: 'main'
 }));
 app.set('view engine', 'handlebars');
-
-// Bodyparser
-app.use(bodyparser.urlencoded({
-  extended: false
-}));
-app.use(bodyparser.json());
 
 // // Passport middleware
 // app.use(passport.initialize());
