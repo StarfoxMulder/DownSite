@@ -552,12 +552,16 @@ li.nav-item>a:hover {
 /*///// FOOTER Section /////*/
 #footerSection {
 	background-color: #051411;
+	height: 100vh;
+}
+#footerSection > .col-12 {
+	margin: auto;
 }
 
 #footerContainer {
 	margin: auto;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	/* margin-top: 150px;
+	margin-bottom: 150px; */
 	width: 875px;
 	border: solid 1px #ff7c7c;
 	height: 161px;
@@ -567,7 +571,7 @@ li.nav-item>a:hover {
 	position: relative;
 	width: 113px;
 	height: 25px;
-	top: 0;
+	top: -1px;
 	left: 0;
 	background-color: #FF7C7C;
 	color: #051411;
