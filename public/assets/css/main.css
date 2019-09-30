@@ -4,9 +4,13 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	/* font-family: 'Raleway', sans-serif; */
+	/* font-family: 'Noto Sans JP', sans-serif; */
+	font-family: 'Nunito Sans', sans-serif;
 	color: #fff;
 	background-color: #051411;
+	font-weight: 400;
 }
 
 .mainCol {
@@ -121,17 +125,18 @@ body {
 }
 
 #activeNavLogo {
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
 	height: 100vh;
 }
 
-.logoImg>img {
+.logoImg>a>img {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
 	bottom: 0;
 	display: block;
+	position: absolute;
 }
 
 /*/////  GENERAL Header & Footer  /////*/
@@ -192,6 +197,7 @@ li.nav-item>a:hover {
 .dropdown-item {
 	color: #fff;
 	background-color: #051411;
+	padding-left: 1rem;
 }
 
 .dropdown-item:hover {
@@ -200,9 +206,16 @@ li.nav-item>a:hover {
 }
 
 #chat {
-	padding: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	color: #ff7c7c;
+	width: 120px;
+	padding: 3px 15px;
 	border-radius: 25px;
-	border: solid 3px #ff7c7c
+	border: solid 3px #ff7c7c;
+	margin: auto;
+	margin-top: 30px;
+	float: right;
 }
 
 #chat>a {
@@ -212,6 +225,7 @@ li.nav-item>a:hover {
 .coral {
 	color: #FF7C7C;
 }
+
 
 
 /*/////  INDEX/DEFAULT  /////*/
@@ -232,7 +246,7 @@ li.nav-item>a:hover {
 	font-size: 64pt;
 	letter-spacing: 2.2px;
 	line-height: 85px;
-	font-weight: 700;
+	font-weight: 400;
 	padding-right: 5%;
 }
 
@@ -265,7 +279,7 @@ li.nav-item>a:hover {
 	font-size: 64pt;
 	letter-spacing: 2.2px;
 	line-height: 85px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-left: 7%;
 	margin-top: 7%;
 }
