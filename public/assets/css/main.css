@@ -81,7 +81,7 @@ body {
 
 .sideColCont {
 	width: calc(100vw - 167px);
-    display: inline-block;
+	display: inline-block;
 }
 
 .sideNavCol {
@@ -109,12 +109,14 @@ body {
 
 #blogLink {
 	color: #FF7c7c;
-    display: table-cell;
+	display: table-cell;
 }
-#blogLink > a {
+
+#blogLink>a {
 	color: #FF7c7c;
-    text-decoration: none;
+	text-decoration: none;
 }
+
 .navPlaceholder {
 	height: 100%;
 }
@@ -173,6 +175,7 @@ header {
 .nav-item {
 	margin: 0 auto;
 }
+
 #about {
 	margin-left: 0;
 }
@@ -214,6 +217,7 @@ li.nav-item>a:hover {
 	background-color: #000;
 	margin-top: -20px;
 }
+
 #processDropdown {
 	margin-top: -15px;
 }
@@ -228,6 +232,68 @@ li.nav-item>a:hover {
 .dropdown-item:hover {
 	background-color: #FF7C7C;
 	color: #fff;
+}
+
+/*** Alt Nav animation *****/
+.snip1226 * {
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.snip1226 {
+	margin-top: 30px;
+}
+
+.snip1226 li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: 0 auto;
+	overflow: hidden;
+	width: auto;
+}
+
+.snip1226 a {
+	padding: 0.3em 0;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 1px;
+	margin: 0;
+	text-decoration: none;
+}
+
+.snip1226 a:before,
+.snip1226 a:after {
+	position: absolute;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+.snip1226 a:before {
+	bottom: 100%;
+	display: block;
+	height: 3px;
+	width: 100%;
+	content: "";
+	background-color: #FF7C7C;
+}
+
+.snip1226 a:after {
+	padding: 0.3em 0;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	content: attr(data-hover);
+	color: #FF7C7C;
+	white-space: nowrap;
+}
+
+.snip1226 li:hover a,
+.snip1226 .current a {
+	transform: translateY(100%);
 }
 
 #chat {
@@ -476,9 +542,10 @@ li.nav-item>a:hover {
 	padding-top: 75px;
 }
 
-#processTopCont > .taglineTop {
+#processTopCont>.taglineTop {
 	margin-top: 15%;
 }
+
 #researchCont {
 	margin-top: 300px;
 }
@@ -588,7 +655,8 @@ li.nav-item>a:hover {
 	background-color: #000;
 	height: 100vh;
 }
-#footerSection > .col-12 {
+
+#footerSection>.col-12 {
 	margin: auto;
 }
 
