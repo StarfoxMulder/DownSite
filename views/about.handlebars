@@ -1,26 +1,35 @@
 <main class="col-11 mainCol">
 	<section class="row" id="fullVH">
 		<section class="row topNav">
-			<ul class="topNavList nav">
+			<div class="col-1"></div>
+			<ul class="topNavList nav col-6">
 				<li class="nav-item" id="about">
-					<a class="nav-link active" href="/">About Us</a>
+					<a class="nav-link active" href="/about">About Us</a>
 				</li>
 				<li class="nav-item" id="process">
 					<a class="nav-link" href="/process">Our Process</a>
 				</li>
-				<li class="nav-item" id="ourWork">
-					<a class="nav-link" href="">Our Work</a>
+				<li class="nav-item dropdown" id="ourWork">
+					<div class="nav-link dropdown-toggle" id="ourWorkDropdown" data-toggle="dropdown" aria-haspopup="true"
+					 aria-expanded="false">Our Work</div>
+					<div class="dropdown-menu" aria-labelledby="ourWorkDropdown">
+						<a class="dropdown-item" href="/portfolio1">Hungry Hackers</a>
+						<a class="dropdown-item" href="/portfolio2">Kajeet</a>
+					</div>
 				</li>
 				<li class="nav-item" id="articles">
-					<a class="nav-link" href="#">Articles</a>
-				</li>
-				<li class="nav-item coral" id="chat">
-					<a class="nav-link" href="/#contactFormSection">Let's Chat</a>
+					<a class="nav-link" href="http://www.getdown.co/mag/">Articles</a>
 				</li>
 			</ul>
+			<div class="nav-item col-4
+                                ">
+				<a class="nav-link" href="/#contactFormSection" id="chat">Let's Chat</a>
+			</div>
+			<div class="col-1"></div>
+
 		</section>
 		<section class="row justify-content-center align-items-center" id="tagline">
-			<div class="col-8">
+			<div class="col-10">
 				<div class="coral taglineTop col-12">
 					<p><span id="dash">—</span> A Creative Agency that designs for good</p>
 				</div>
@@ -70,26 +79,28 @@
 		</div>
 	</section>
 
-	<section id="footerSection" class="col-12">
-		<div id="footerContainer">
-			<div id="footerLeft">
-				<div class="locationCont">
-					<p>PHYSICAL</p>
+	<section class="row" id="footerSection">
+		<div class="col-12">
+			<div id="footerContainer">
+				<div id="footerLeft">
+					<div class="locationCont">
+						<p>PHYSICAL</p>
+					</div>
+					<div id="address">
+						<p id="compName">DOWN CREATIVE</p>
+						<p>700 12th St. NW Suite 700 NW, Washington, DC 20005</p>
+						<p><img class="phoneImg" src="assets/images/phone.png" />(202) 904-2307</p>
+					</div>
 				</div>
-				<div id="address">
-					<p id="compName">DOWN CREATIVE</p>
-					<p>700 12th St. NW Suite 700, Washington, DC 20005</p>
-					<p><img class="phoneImg" src="assets/images/phone.png" />(202) 904-2307</p>
-				</div>
-			</div>
-			<div id="footerRight">
-				<div class="locationCont">
-					<p>DIGITAL</p>
-				</div>
-				<div id="socialCont">
-					<a id="linkedin" href="#" target="_blank"><img src="assets/images/linkedin2.png" /></a>
-					<a id="twitter" href="#" target="_blank"><img src="assets/images/twitter2.png" /></a>
-					<a id="instagram" href="#" target="_blank"><img src="assets/images/instragram1.png" /></a>
+				<div id="footerRight">
+					<div class="locationCont">
+						<p>DIGITAL</p>
+					</div>
+					<div id="socialCont">
+						<a id="linkedin" href="#" target="_blank"><img src="assets/images/linkedin2.png" /></a>
+						<a id="twitter" href="#" target="_blank"><img src="assets/images/twitter2.png" /></a>
+						<a id="instagram" href="#" target="_blank"><img src="assets/images/instragram1.png" /></a>
+					</div>
 				</div>
 			</div>
 		</div>

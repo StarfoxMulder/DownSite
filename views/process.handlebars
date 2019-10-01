@@ -1,33 +1,44 @@
 <main class="col-11 mainCol">
   <section class="row">
     <section class="row topNav">
-      <ul class="topNavList nav">
+      <div class="col-1"></div>
+      <ul class="topNavList nav col-6">
         <li class="nav-item" id="about">
-          <a class="nav-link active" href="/">About Us</a>
+          <a class="nav-link active" href="/about">About Us</a>
         </li>
         <li class="nav-item" id="process">
           <a class="nav-link" href="/process">Our Process</a>
         </li>
-        <li class="nav-item" id="ourWork">
-          <a class="nav-link" href="">Our Work</a>
+        <li class="nav-item dropdown" id="ourWork">
+          <div class="nav-link dropdown-toggle" id="ourWorkDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Our Work</div>
+          <div class="dropdown-menu" aria-labelledby="ourWorkDropdown" id="processDropdown">
+            <a class="dropdown-item" href="/portfolio1">Hungry Hackers</a>
+            <a class="dropdown-item" href="/portfolio2">Kajeet</a>
+          </div>
         </li>
         <li class="nav-item" id="articles">
-          <a class="nav-link" href="#">Articles</a>
-        </li>
-        <li class="nav-item coral" id="chat">
-          <a class="nav-link" href="/#contactFormSection">Let's Chat</a>
+          <a class="nav-link" href="http://www.getdown.co/mag/">Articles</a>
         </li>
       </ul>
+      <div class="nav-item col-4
+                                ">
+        <a class="nav-link" href="/#contactFormSection" id="chat">Let's Chat</a>
+      </div>
+      <div class="col-1"></div>
+
     </section>
     <section class="row justify-content-center" id="mainRow">
       <div class="col-1"></div>
       <div class="col-7" id="leftCol">
-        <div class="coral taglineTop col-12">
-          <p><span id="dash">—</span> A Creative Agency that designs for good</p>
-        </div>
-        <div class="taglineBottom col-12">
-          <p>We’re a team <br>of socially <br>concious <br>creatives with <br>the ability to <br>bring simple <br>solutions
-            to <br>complex <br>problems.</p>
+        <div class="row align-items-center" id="processTopCont">
+          <div class="coral taglineTop col-12">
+            <p><span id="dash">—</span> A Creative Agency that designs for good</p>
+          </div>
+          <div class="taglineBottom col-12">
+            <p>We’re a team <br>of socially <br>concious <br>creatives with <br>the ability to <br>bring simple <br>solutions
+              to <br>complex <br>problems.</p>
+          </div>
         </div>
         <div class="col-10" id="circlesCont">
           <div class="blending circle" id="tealCircle"></div>
@@ -64,8 +75,8 @@
     </section>
   </section>
 
-  <section class="row">
-    <section id="footerSection" class="col-12">
+  <section class="row" id="footerSection">
+    <div class="col-12">
       <div id="footerContainer">
         <div id="footerLeft">
           <div class="locationCont">
@@ -73,7 +84,7 @@
           </div>
           <div id="address">
             <p id="compName">DOWN CREATIVE</p>
-            <p>700 12th St. NW, Suite 700, Washington, DC 20005</p>
+            <p>700 12th St. NW Suite 700 NW, Washington, DC 20005</p>
             <p><img class="phoneImg" src="assets/images/phone.png" />(202) 904-2307</p>
           </div>
         </div>
@@ -88,6 +99,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 </main>
