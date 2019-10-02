@@ -543,6 +543,10 @@ li.nav-item>a:hover {
 	padding-top: 75px;
 }
 
+#processTopCont {
+	padding-left: 50px;
+}
+
 #processTopCont>.taglineTop {
 	margin-top: 15%;
 }
