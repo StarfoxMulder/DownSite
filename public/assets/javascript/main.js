@@ -18,6 +18,23 @@ $(document).ready(function () {
         console.log("width 0");
     });
 
+    // For mobile nav animation
+    $("#mobileNavTopMenu").click(function (e) {
+        $("#sideNavContMobileTop").show();
+        $("#navPlaceholderMobileTop").hide();
+        $("#closeSideNavMobileNav").show();
+        document.getElementById("sideNavContMobileTop").classList.add("activeSideNav");
+        console.log("width 100vw");
+    });
+
+    $("#closeSideNavMobileNav img").click(function (e) {
+        document.getElementById("sideNavContMobileTop").classList.remove("activeSideNav");
+        $("#sideNavContMobileTop").hide();
+        $("#closeSideNavMobileNav").hide();
+        $("#navPlaceholderMobileTop").show();
+        console.log("width 0");
+    });
+
     function addFadeIn(parentID) {
         var num = document.querySelectorAll('#' + parentID + ' .fadeInText').length;
         var children = document.querySelectorAll('#' + parentID + ' .fadeInText');
