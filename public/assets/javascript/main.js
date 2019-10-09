@@ -48,6 +48,7 @@ $(document).ready(function () {
     }
     addFadeIn("tagline");
 
+
 });
 
 //Add class FadeIn to each child element of parent element w/ special identifier
@@ -97,3 +98,26 @@ function fadeIn(children, i){
 // }
 
 // addFadeIn("tagline");
+
+//// changing portfolio icons on device width
+// function resize() {
+//     if ($(window).width() < 768) {
+//         console.log("width is greater than 768");
+//         $("#change1").attr('src', '/assets/images/Logo3.png');
+//         $("#change2").attr('src', '/assets/images/Logo4.png');
+//         $("#change3").attr('src', '/assets/images/Logo6.png');
+//         $("#change4").attr('src', '/assets/images/Logo5.png');
+//         $("#change5").attr('src', '/assets/images/Logo1.png');
+//         $("#change6").attr('src', '/assets/images/Logo2.png');
+//     } else {
+//         console.log("width is lesser than 768");
+//         $("#change1").attr('src', '/assets/images/Logo4.png');
+//         $("#change2").attr('src', '/assets/images/Logo3.png');
+//         $("#change3").attr('src', '/assets/images/Logo5.png');
+//         $("#change4").attr('src', '/assets/images/Logo2.png');
+//         $("#change5").attr('src', '/assets/images/Logo6.png');
+//         $("#change6").attr('src', '/assets/images/Logo1.png');
+//     }
+// }
+// resize();
+// $(window).on('load', resize);

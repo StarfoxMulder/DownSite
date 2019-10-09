@@ -513,8 +513,56 @@ li.nav-item>a:hover {
 }
 
 .caseIcon {
-	filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(174deg) brightness(96%) contrast(85%);
-	filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(2232%) hue-rotate(199deg) brightness(120%) contrast(97%);
+	/* filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(174deg) brightness(96%) contrast(85%);
+	filter: brightness(0) saturate(100%) invert(84%) sepia(1%) saturate(2232%) hue-rotate(199deg) brightness(120%) contrast(97%); */
+	opacity: 0.5;
+}
+
+#change1 {
+	background-image: url('/assets/images/Logo3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+
+#change2 {
+	background-image: url('/assets/images/Logo4.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+
+#change3 {
+	background-image: url('/assets/images/Logo6.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+
+#change4 {
+	background-image: url('/assets/images/Logo5.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+
+#change5 {
+	background-image: url('/assets/images/Logo1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
+
+	width: 100px;
+
+	margin-left: 92px;
+	background-position: center;
+}
+
+#change6 {
+	background-image: url('/assets/images/Logo2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 80px;
 }
 
 #caseStudiesContent {
@@ -1156,6 +1204,10 @@ li.nav-item>a:hover {
 /*---Media Queries--*/
 
 @media only screen and (max-width: 768px) {
+	html {
+		width: 100%;
+	}
+
 	#desktopNav {
 		display: none;
 	}
@@ -1163,6 +1215,8 @@ li.nav-item>a:hover {
 
 	#mobileNavTop {
 		display: block;
+		display: block;
+		flex: 0 0 16.66%;
 	}
 
 	#mobileNavSticky {
@@ -1201,6 +1255,10 @@ li.nav-item>a:hover {
 
 	.menuIcon>img {
 		margin-top: 13px;
+	}
+
+	.logoImg {
+		bottom: 5vh;
 	}
 
 	.logoImg>a>img {
@@ -1263,6 +1321,82 @@ li.nav-item>a:hover {
 	#fullVH {
 		height: 101vh;
 	}
+
+	/* main section of home page */
+	#officeBreak {
+		height: auto;
+	}
+
+	#officeImg {
+		background-image: url('/assets/images/office-mobile.png');
+		height: 415px;
+	}
+
+	#officeText {
+		height: 415px;
+		overflow: hidden;
+	}
+
+	.taglineMid {
+		font-size: 31px;
+		line-height: 35px;
+		margin: auto;
+		margin-top: 15%;
+	}
+
+	.caseStudiesIcons {
+		margin-top: 20%;
+	}
+
+	#change1 {
+		background-image: url('/assets/images/Logo4.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+	}
+
+	#change2 {
+		background-image: url('/assets/images/Logo3.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+		background-position: center;
+	}
+
+	#change3 {
+		margin-top: 20%;
+		background-image: url('/assets/images/Logo5.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+	}
+
+	#change4 {
+		background-image: url('/assets/images/Logo2.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+	}
+
+	#change5 {
+		background-image: url('/assets/images/Logo6.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+		margin-left: 0;
+		width: auto;
+	}
+
+	#change6 {
+		margin-top: 20%;
+		background-image: url('/assets/images/Logo1.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 78px;
+	}
+
+	/**** Research how flex: 0 0 95px works
+		seems like flex is key to WHY THE FUCK MOBILE is so cray ***/
 }
 
 @media only screen and (min-width: 1081px) {
