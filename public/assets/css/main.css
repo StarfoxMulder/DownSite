@@ -592,6 +592,10 @@ li.nav-item>a:hover {
 	color: #c8c8c8;
 }
 
+#viewInstructions {
+	display: none;
+}
+
 #caseStudiesContentImages {
 	padding: 0;
 }
@@ -783,6 +787,16 @@ li.nav-item>a:hover {
 }
 
 #fname {}
+
+#mobileContactText {
+	display: none;
+}
+
+#desktopContactText {
+	display: block;
+}
+
+
 
 #submitButton {
 	width: 251px;
@@ -1393,6 +1407,82 @@ li.nav-item>a:hover {
 		background-size: contain;
 		background-repeat: no-repeat;
 		height: 78px;
+		margin-top: 45%
+	}
+
+	#caseStudiesContent {
+		height: auto;
+	}
+
+	#caseStudiesContentText>p {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		color: #818181;
+	}
+
+	p#viewInstructions {
+		display: block;
+		color: #ff7c7c;
+		font-size: 12px;
+		margin-bottom: 35px;
+	}
+
+	.middleText {
+		display: none;
+	}
+
+	.csImg {
+		height: auto;
+	}
+
+	#contactFormSection {
+		height: auto;
+		padding-bottom: 100px;
+	}
+
+	#mobileContactText {
+		display: block;
+		margin-bottom: 100px;
+	}
+
+	#desktopContactText {
+		display: none;
+	}
+
+	#phoneText {
+		width: 74%;
+		margin-left: 5%;
+		padding-left: 15px;
+	}
+
+	.phoneButton {
+		width: 50%;
+		padding: 10px 25px;
+		margin-left: calc(5% + 15px);
+	}
+
+	#submitButton {
+		margin-top: 35px;
+	}
+
+	#footerSection {
+		height: auto;
+		padding: 200px 0;
+	}
+
+	#footerContainer2 {
+		height: auto;
+	}
+
+	#footerLeft2 {
+		border: none;
+		border-bottom: 1px solid #FF7C7C;
+		height: 223px;
+	}
+
+	#address {
+		width: 82%;
+		font-size: 20px;
 	}
 
 	/**** Research how flex: 0 0 95px works

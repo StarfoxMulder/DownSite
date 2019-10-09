@@ -142,12 +142,13 @@
 		</div>
 	</section>
 	<section class="row" id="caseStudiesContent">
-		<div class="col-4" id="caseStudiesContentText">
+		<div class="col-12 col-md-4" id="caseStudiesContentText">
 			<h2>Take a look at<br> some of <br>our most<br>recent work.</h2>
 			<p>Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien sagittis mi, nec aliquam ex
 				neque sit amet neque. Mauris sed risus vitae tellus sollicitudin tempus. </p>
+			<p id="viewInstructions">(Tap to view Case Study)</p>
 		</div>
-		<div class='col-8' id="caseStudiesContentImages">
+		<div class='col-12 col-md-8' id="caseStudiesContentImages">
 			<a href="/portfolio1">
 				<div class="col-12 csImg" id="caseStudy1"><img class="csImage" src="/assets/images/kids.jpg" />
 					<div class="middleTextCont">
@@ -165,13 +166,17 @@
 		</div>
 	</section>
 	<section class="row" id="contactFormSection">
-		<div class="col-8">
-			<form action='/sendMessage' method='post' class='contact-form col-8' id="contactForm" onsubmit="event.preventDefault(); handleMessage();">
-				<div class="form-group col-6 contactTop">
+		<div class="col-12" id="mobileContactText">
+			<h2 id="phoneText">We’d love to know more about your project. Get in touch here or give us a call.</h2>
+			<button class="phoneButton">Let's Chat</button>
+		</div>
+		<div class="col-12 col-md-8">
+			<form action='/sendMessage' method='post' class='contact-form col-12 col-md-8' id="contactForm" onsubmit="event.preventDefault(); handleMessage();">
+				<div class="form-group col-12 col-md-6 contactTop">
 					<label for="fname">First name</label>
 					<input type="text" class="form-control" id="fname" name="firstname">
 				</div>
-				<div class="form-group col-6 contactTop" id="lnameCont">
+				<div class="form-group col-12 col-md-6 contactTop" id="lnameCont">
 					<label for="fname">Last name</label>
 					<input type="text" class="form-control" id="lname" name="firstname">
 				</div>
@@ -186,9 +191,9 @@
 				<input type="submit" value="SEND IT!" id="submitButton">
 			</form>
 		</div>
-		<div class="col-4">
+		<div class="col-12 col-md-4" id="desktopContactText">
 			<h2 id="phoneText">We’d love to know more about your project. Get in touch here or give us a call.</h2>
-			<button class="phoneButton">Let's Chat</button>
+			<button class="phoneButton" id="mobilePhoneButton">Call Now</button>
 		</div>
 	</section>
 
