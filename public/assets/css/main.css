@@ -1306,6 +1306,8 @@ li.nav-item>a:hover {
 	}
 
 	.mobileDisplay>p {
+		font-size: 12px;
+		line-height: 16px;
 		letter-spacing: 0;
 	}
 
@@ -1325,7 +1327,16 @@ li.nav-item>a:hover {
 		line-height: 35px;
 	}
 
-	.navCol {
+	#tagline>.taglineBottom>.taglineBottom {
+		font-size: 26px;
+	}
+
+
+	.fadeInText>span {
+		display: inline-block;
+	}
+
+	.fadeIn .navCol {
 		max-width: 65px;
 		position: relative;
 	}
