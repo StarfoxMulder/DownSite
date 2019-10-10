@@ -917,6 +917,9 @@ li.nav-item>a:hover {
 #footerRight2 {
 	height: 161px;
 	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 #socialCont {
@@ -1478,6 +1481,11 @@ li.nav-item>a:hover {
 		border: none;
 		border-bottom: 1px solid #FF7C7C;
 		height: 223px;
+	}
+
+	#footerRight2 {
+		height: 161px;
+		position: relative;
 	}
 
 	#address {
