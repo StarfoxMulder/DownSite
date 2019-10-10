@@ -29,6 +29,11 @@ body::-webkit-scrollbar {
 	animation: new-item-animation 1.5s linear forwards;
 }
 
+.taglineCol {
+	margin-left: 8.33%;
+	margin-top: 8.33%;
+}
+
 /* #tagline .fadeInText:nth-of-type(1) {
 	opacity: 0;
 	animation: new-item-animation 1s linear forwards;
@@ -94,6 +99,7 @@ body::-webkit-scrollbar {
 
 #mobileNavSticky {
 	display: none;
+	width: 60px;
 }
 
 #closeSideNav {
@@ -109,7 +115,8 @@ body::-webkit-scrollbar {
 	float: left;
 }
 
-#closeSideNavMobileNav {
+#closeSideNavMobileNav,
+#closeSideNavMobileSticky {
 	width: 95px;
 	border-right: 1px solid #FF7C7C;
 	height: 100vh;
@@ -130,7 +137,8 @@ body::-webkit-scrollbar {
 	display: block;
 }
 
-#closeSideNavMobileNav img {
+#closeSideNavMobileNav img,
+#closeSideNavMobileSticky img {
 	width: 30px;
 	margin: auto;
 	/* margin-left: 28px; */
@@ -213,7 +221,7 @@ body::-webkit-scrollbar {
 
 #blogLink>a {
 	color: #FF7c7c;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .navPlaceholder {
@@ -951,11 +959,21 @@ li.nav-item>a:hover {
 #port1Top img {
 	opacity: 0.6;
 	width: 100%;
+	display: none;
+}
+
+#port1TopImg {
+	background-image: url('/assets/images/hackers.jpg');
+	opacity: 0.6;
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	width: 100%;
 }
 
 #HHTagTop {
 	position: absolute;
-	margin: 230px 190px;
+	margin: 211px 200px;
 	font-size: 80px;
 	font-weight: 400;
 	line-height: 86px;
@@ -964,7 +982,7 @@ li.nav-item>a:hover {
 
 #HHTagSub {
 	position: absolute;
-	margin: 430px 195px;
+	margin: 420px 205px;
 	color: #05DE88;
 }
 
@@ -977,11 +995,14 @@ li.nav-item>a:hover {
 	color: #000;
 	height: 770px;
 	margin: auto;
-	margin-top: -137px;
+	margin-top: -100px;
 }
 
 #grayBlock p {
 	color: #818181;
+	width: 66.5%;
+	margin: auto;
+	margin-top: 8.5%;
 }
 
 #port1HHImg {
@@ -1242,6 +1263,11 @@ li.nav-item>a:hover {
 		border: none;
 		/* for now, display none */
 		display: none;
+		position: sticky;
+	}
+
+	#mobileStickyNavMenu {
+		width: 55px;
 	}
 
 	.topNav {
@@ -1254,6 +1280,11 @@ li.nav-item>a:hover {
 
 	.mobileDisplay {
 		display: block;
+	}
+
+	.taglineCol {
+		margin-left: 0;
+		margin-top: 40%;
 	}
 
 	.taglineBottom {
@@ -1314,7 +1345,7 @@ li.nav-item>a:hover {
 	}
 
 	#blogLink {
-		margin-top: 33%;
+		margin-top: 25%;
 		display: block;
 	}
 
@@ -1337,11 +1368,20 @@ li.nav-item>a:hover {
 
 	#fullVH {
 		height: 101vh;
+		width: 100%;
+		z-index: 0;
+		position: absolute;
+	}
+
+	/* Until I finalize the sticky nav logic */
+	#fullVH {
+		position: relative;
 	}
 
 	/* main section of home page */
 	#officeBreak {
 		height: auto;
+		clear: both;
 	}
 
 	#officeImg {
@@ -1491,6 +1531,63 @@ li.nav-item>a:hover {
 	#address {
 		width: 82%;
 		font-size: 20px;
+	}
+
+	/*  port1 */
+	#HHtagTop {
+		font-size: 31px;
+		line-height: 35px;
+		margin: 35% 10%;
+	}
+
+	#HHTagSub {
+		margin: 55% 10%;
+	}
+
+	#port1HHImg {
+		height: 300px;
+		background-position: center;
+		background-size: cover;
+		margin-top: 50px;
+	}
+
+	#hackText {
+		height: 500px;
+	}
+
+	#hackText>p {
+		width: 170px;
+	}
+
+	#hackComp {
+		background-position: center;
+		background-size: 100%;
+		height: 350px;
+	}
+
+	#hackLogo {
+		height: 350px;
+		background-size: cover;
+	}
+
+	#hackShirt {
+		height: 350px;
+		background-size: cover;
+	}
+
+	#port1HHCTA>h2 {
+		width: 75%;
+		text-align: center;
+		font-size: 1.8rem;
+	}
+
+	#hh14,
+	#hhBanner,
+	#hh15,
+	#hh16 {
+		height: 200px;
+		margin-bottom: 0;
+		background-size: cover;
 	}
 
 	/**** Research how flex: 0 0 95px works

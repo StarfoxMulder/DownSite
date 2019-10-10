@@ -18,7 +18,7 @@ $(document).ready(function () {
         console.log("width 0");
     });
 
-    // For mobile nav animation
+    // For mobile nav animation TOP
     $("#mobileNavTopMenu").click(function (e) {
         $("#sideNavContMobileTop").show();
         $("#navPlaceholderMobileTop").hide();
@@ -35,6 +35,23 @@ $(document).ready(function () {
         console.log("width 0");
     });
 
+    // For mobile nav animation STICKY
+    // $("#mobileNavStickyMenu").click(function (e) {
+    //     $("#sideNavContMobileSticky").show();
+    //     $("#mobileNavStickyMenu").hide();
+    //     $("#closeSideNavMobileSticky").show();
+    //     document.getElementById("sideNavContMobileSticky").classList.add("activeSideNav");
+    //     console.log("width 100vw");
+    // });
+
+    // $("#closeSideNavMobileNav img").click(function (e) {
+    //     document.getElementById("sideNavContMobileSticky").classList.remove("activeSideNav");
+    //     $("#sideNavContMobileSticky").hide();
+    //     $("#closeSideNavMobileSticky").hide();
+    //     $("#navPlaceholderMobileSticky").show();
+    //     console.log("width 0");
+    // });
+
     function addFadeIn(parentID) {
         var num = document.querySelectorAll('#' + parentID + ' .fadeInText').length;
         var children = document.querySelectorAll('#' + parentID + ' .fadeInText');
@@ -48,6 +65,20 @@ $(document).ready(function () {
     }
     addFadeIn("tagline");
 
+    var fixed = document.getElementById('mobileNavTop');
+
+    fixed.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+
+    var body = document.getElementsByTagName("body")[0];
+    var parent = document.getElementById("parent-div");
+    var child = document.getElementById("child-div");
+    body.onScroll = function () {
+        if (document.documentElement.scrollTop >= child.offsetTop) {
+            child.style.display = "block";
+        }
+    }
 
 });
 
