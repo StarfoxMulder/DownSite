@@ -1706,6 +1706,15 @@ li.nav-item>a:hover {
 		height: 100%;
 	}
 
+	.tagline2>.taglineBottom {
+		font-size: 26px;
+	}
+
+	.tagline2>.mobileDisplay {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
 	#aboutBannerImg {
 		background-size: contain;
 		background-repeat: no-repeat;
