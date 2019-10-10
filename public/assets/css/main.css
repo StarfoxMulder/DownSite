@@ -34,6 +34,12 @@ body::-webkit-scrollbar {
 	margin-top: 8.33%;
 }
 
+.taglineCol2 {
+	margin-left: 8.33%;
+	margin-top: 8.33%;
+	min-width: 1000px;
+}
+
 /* #tagline .fadeInText:nth-of-type(1) {
 	opacity: 0;
 	animation: new-item-animation 1s linear forwards;
@@ -454,6 +460,7 @@ li.nav-item>a:hover {
 	height: 100%;
 }
 
+
 .taglineTop {
 	font-size: 16px;
 	padding-left: 0;
@@ -466,7 +473,7 @@ li.nav-item>a:hover {
 .taglineBottom {
 	font-size: 64pt;
 	letter-spacing: 2.2px;
-	line-height: 85px;
+	line-height: 90px;
 	font-weight: 400;
 	padding-right: 5%;
 	padding-left: 0;
@@ -676,7 +683,7 @@ li.nav-item>a:hover {
 	border-bottom: 1px solid #FF7C7C;
 }
 
-#staffSection .col-5 {
+#staffSection .col-md-5 {
 	margin-bottom: 75px;
 }
 
@@ -971,9 +978,13 @@ li.nav-item>a:hover {
 	width: 100%;
 }
 
-#HHTagTop {
+#portTagTopCont {
 	position: absolute;
-	margin: 211px 200px;
+	margin-top: 10%;
+	margin-left: 8.5%;
+}
+
+#HHTagTop {
 	font-size: 80px;
 	font-weight: 400;
 	line-height: 86px;
@@ -981,8 +992,6 @@ li.nav-item>a:hover {
 }
 
 #HHTagSub {
-	position: absolute;
-	margin: 420px 205px;
 	color: #05DE88;
 }
 
@@ -1093,11 +1102,21 @@ li.nav-item>a:hover {
 
 #port2Top img {
 	width: 100%;
+	display: none;
+}
+
+#port2TopImg {
+	background-image: url('/assets/images/port2banner.png');
+	opacity: 0.6;
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	width: 100%;
 }
 
 #P2TagTop {
-	position: absolute;
-	margin: 230px 190px;
+	/* position: absolute;
+	margin: 230px 190px; */
 	font-size: 80px;
 	font-weight: 400;
 	line-height: 86px;
@@ -1105,8 +1124,8 @@ li.nav-item>a:hover {
 }
 
 #P2TagSub {
-	position: absolute;
-	margin: 430px 195px;
+	/* position: absolute;
+	margin: 430px 195px; */
 	color: #FEE861;
 }
 
@@ -1119,13 +1138,16 @@ li.nav-item>a:hover {
 	color: #818181;
 	height: 770px;
 	margin: auto;
-	margin-top: -137px;
+	margin-top: -100px;
 }
 
 #whiteBlock p {
-	width: 80%;
+	/* width: 80%;
 	margin: auto;
-	margin-top: 137px;
+	margin-top: 137px; */
+	width: 66.5%;
+	margin: auto;
+	margin-top: 8.5%;
 }
 
 #port2device {}
@@ -1280,11 +1302,22 @@ li.nav-item>a:hover {
 
 	.mobileDisplay {
 		display: block;
+		font-size: 0.9rem;
+	}
+
+	.mobileDisplay>p {
+		letter-spacing: 0;
 	}
 
 	.taglineCol {
 		margin-left: 0;
 		margin-top: 40%;
+	}
+
+	.taglineCol2 {
+		margin-left: 0;
+		margin-top: 45%;
+		min-width: auto;
 	}
 
 	.taglineBottom {
@@ -1534,15 +1567,16 @@ li.nav-item>a:hover {
 	}
 
 	/*  port1 */
-	#HHtagTop {
-		font-size: 31px;
-		line-height: 35px;
-		margin: 35% 10%;
+	#portTagTopCont {
+		margin-top: 30%;
 	}
 
-	#HHTagSub {
-		margin: 55% 10%;
+	#HHTagTop {
+		font-size: 31px;
+		line-height: 35px;
 	}
+
+	#HHTagSub {}
 
 	#port1HHImg {
 		height: 300px;
@@ -1588,6 +1622,103 @@ li.nav-item>a:hover {
 		height: 200px;
 		margin-bottom: 0;
 		background-size: cover;
+	}
+
+	/* port2 */
+	#P2TagTop {
+		font-size: 31px;
+		line-height: 35px;
+	}
+
+	#P2TagSub {}
+
+	#port2deviceImg {
+		background-size: cover;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#port2paper {
+		min-height: 350px;
+		height: 400px;
+	}
+
+	#port2peopleImg {
+		background-size: contain;
+		height: 350px;
+	}
+
+	#port2shapesImg {
+		background-size: contain;
+		height: 350px;
+		padding: 0;
+	}
+
+	#shapesFader {
+		height: 55%;
+		width: 100%;
+	}
+
+	#port2logos {
+		background-size: contain;
+		height: 350px;
+		padding: 0;
+	}
+
+	#port2logosImg {
+		background-size: cover;
+		height: 350px;
+		padding: 0;
+	}
+
+	#port2cards {
+		padding: 0;
+	}
+
+	#port2cardsImg {
+		background-size: contain;
+		height: 350px;
+	}
+
+	#port2plans {
+		padding: 0;
+	}
+
+	#port2plansImg {
+		background-size: cover;
+		height: 350px;
+	}
+
+	#port2pages {
+		padding: 0;
+	}
+
+	#port2pagesImg {
+		background-size: contain;
+		height: auto;
+		min-height: 250px;
+	}
+
+	/* about */
+	#tagline.taglineAbout {
+		width: 100%;
+		height: 100%;
+	}
+
+	#aboutBannerImg {
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 275px;
+	}
+
+	#staffSection {
+		margin-top: 75px;
+		margin-bottom: 0px;
+	}
+
+	#staffSection .col-12 {
+		padding-bottom: 75px;
 	}
 
 	/**** Research how flex: 0 0 95px works
