@@ -1,4 +1,32 @@
-<main class="col-11 mainCol">
+<div class="navCol processMobileNav" id="mobileNavSticky">
+  <div id="sideNavContMobileSticky">
+    <div id="closeSideNavMobileSticky"><img src="/assets/images/close.png" /></div>
+    <div class="sideColCont">
+      <div class="sideNavCol">
+        <h3 class="sideNavTitle"><a href="/about">About Us</a></h3>
+        <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+          sagittis mi, nec aliquam ex neque sit amet neque. </p>
+      </div>
+      <div class="sideNavCol">
+        <h3 class="sideNavTitle"><a href="/process">Our Process</a></h3>
+        <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+          sagittis mi, nec aliquam ex neque sit amet neque. </p>
+      </div>
+      <div class="sideNavCol">
+        <h3 class="sideNavTitle"><a href="/portfolio1">Our Work</a></h3>
+        <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+          sagittis mi, nec aliquam ex neque sit amet neque. </p>
+        <div id="blogLink"><a href="http://www.getdown.co/mag/">Blog Posts & Articles</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menuIcon" id="mobileNavStickyMenu">
+    <img src="assets/images/group-2.png" />
+  </div>
+</div>
+
+<main class="col-11 mainCol" id="processMain">
   <section class="row" id="processRow">
     <section class="row topNav">
       <div class="col-1"></div>
@@ -17,7 +45,7 @@
 
     <section class="row {{!-justify-content-center-}}" id="mainRow">
       {{!-- <div class="col-1"></div> --}}
-      <div class="navCol" id="mobileNavTop">
+      {{!-- <div class="navCol" id="mobileNavTop">
         <div id="sideNavContMobileTop" class="sideNavContMobileTop">
           <div id="closeSideNavMobileNav"><img src="/assets/images/close.png" /></div>
           <div class="sideColCont">
@@ -54,8 +82,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="col-7" id="leftCol">
+      </div> --}}
+      <div class="col-md-7 col-12" id="leftCol">
         <div class="row align-items-center" id="processTopCont">
           <div class="coral taglineTop col-12">
             <p><span id="dash">—</span> A Creative Agency that designs for good</p>
@@ -70,7 +98,7 @@
           <div class="blending circle" id="coralCircle"></div>
         </div>
       </div>
-      <div class="col-3" id="rightCol">
+      <div class="col-md-3 col-10" id="rightCol">
         <div id="researchCont">
           <img src="assets/images/chart1.png" />
           <h3 class="processSteps">1. Research</h3>
