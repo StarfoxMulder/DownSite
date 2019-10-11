@@ -124,6 +124,7 @@ body::-webkit-scrollbar {
 #closeSideNavMobileNav,
 #closeSideNavMobileSticky {
 	width: 95px;
+	max-width: 60px;
 	border-right: 1px solid #FF7C7C;
 	height: 100vh;
 	/* display: inline-block; */
@@ -145,10 +146,10 @@ body::-webkit-scrollbar {
 
 #closeSideNavMobileNav img,
 #closeSideNavMobileSticky img {
-	width: 30px;
+	width: 20px;
 	margin: auto;
 	/* margin-left: 28px; */
-	margin-top: 30px;
+	margin-top: 20px;
 	display: block;
 }
 
@@ -1276,6 +1277,7 @@ li.nav-item>a:hover {
 	#mobileNavTop {
 		display: block;
 		display: block;
+		max-width: 60px;
 		flex: 0 0 16.66%;
 	}
 
@@ -1290,6 +1292,30 @@ li.nav-item>a:hover {
 
 	#mobileStickyNavMenu {
 		width: 55px;
+	}
+
+	#mobileNavStickyMenu {
+		width: 60px;
+	}
+
+	#sideNavContMobileSticky {
+		display: none;
+	}
+
+	#mobileNavSticky.showStickyNav {
+		display: block;
+	}
+
+	#mobileNavSticky>#closeSideNavMobileSticky {
+		display: block;
+		max-width: 60px;
+	}
+
+	#mobileNavSticky>#sideNavContMobileSticky.activeSideNav {
+		display: block;
+		width: 100vw;
+		height: 101vh;
+		background-color: #000;
 	}
 
 	.topNav {
@@ -1365,7 +1391,7 @@ li.nav-item>a:hover {
 	.sideNavContMobileTop {
 		width: 100vw;
 		height: 102vh;
-		background-color: blue;
+		/* background-color: blue; */
 	}
 
 	.sideColCont {
@@ -1386,6 +1412,7 @@ li.nav-item>a:hover {
 	.sideNavText {
 		line-height: 24px;
 		padding-right: 0%;
+		font-size: 14px;
 	}
 
 	#blogLink {

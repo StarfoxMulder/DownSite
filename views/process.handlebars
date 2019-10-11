@@ -26,10 +26,48 @@
         <a class="nav-link" href="/#contactFormSection" id="chat">Let's Chat</a>
       </div>
       <div class="col-1"></div>
-
     </section>
-    <section class="row justify-content-center" id="mainRow">
-      <div class="col-1"></div>
+
+    <section class="row {{!-justify-content-center-}}" id="mainRow">
+      {{!-- <div class="col-1"></div> --}}
+      <div class="navCol" id="mobileNavTop">
+        <div id="sideNavContMobileTop" class="sideNavContMobileTop">
+          <div id="closeSideNavMobileNav"><img src="/assets/images/close.png" /></div>
+          <div class="sideColCont">
+            <div class="sideNavCol">
+              <h3 class="sideNavTitle"><a href="/about">About Us</a></h3>
+              <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+                sagittis mi, nec aliquam ex neque sit amet neque. </p>
+            </div>
+            <div class="sideNavCol">
+              <h3 class="sideNavTitle"><a href="/process">Our Process</a></h3>
+              <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+                sagittis mi, nec aliquam ex neque sit amet neque. </p>
+            </div>
+            <div class="sideNavCol">
+              <h3 class="sideNavTitle"><a href="/portfolio1">Our Work</a></h3>
+              <p class="sideNavText">Duis ultricies euismod luctus. Sed commodo, nisi nec sodales mattis, lacus sapien
+                sagittis mi, nec aliquam ex neque sit amet neque. </p>
+              <div id="blogLink"><a href="http://www.getdown.co/mag/">Blog Posts & Articles</a></div>
+            </div>
+          </div>
+          <div id="activeNavLogo">
+            <a href="/">
+              <img src="assets/images/DOWN_static.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="navPlaceholder" id="navPlaceholderMobileTop">
+          <div class="menuIcon" id="mobileNavTopMenu">
+            <img src="assets/images/group-2.png" />
+          </div>
+          <div class="logoImg">
+            <a href="/">
+              <img src="assets/images/DOWN_animation.gif" />
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="col-7" id="leftCol">
         <div class="row align-items-center" id="processTopCont">
           <div class="coral taglineTop col-12">
@@ -77,8 +115,8 @@
 
   <section class="row" id="footerSection">
     <div class="col-12">
-      <div id="footerContainer">
-        <div id="footerLeft">
+      <div id="footerContainer2" class="col-12 col-md-8">
+        <div id="footerLeft2" class="col-12 col-md-8">
           <div class="locationCont">
             <p>PHYSICAL</p>
           </div>
@@ -88,7 +126,7 @@
             <p><img class="phoneImg" src="assets/images/phone.png" />(202) 904-2307</p>
           </div>
         </div>
-        <div id="footerRight">
+        <div id="footerRight2" class="col-12 col-md-4">
           <div class="locationCont">
             <p>DIGITAL</p>
           </div>
@@ -101,4 +139,5 @@
       </div>
     </div>
   </section>
+
 </main>

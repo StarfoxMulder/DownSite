@@ -35,6 +35,23 @@ $(document).ready(function () {
         console.log("width 0");
     });
 
+    // For mobile sticky nav animation TOP
+    $("#mobileNavStickyMenu").click(function (e) {
+        $("#sideNavContMobileSticky").show();
+        $("#mobileNavStickyMenu").hide();
+        $("#closeSideNavMobileSticky").show();
+        document.getElementById("sideNavContMobileSticky").classList.add("activeSideNav");
+        console.log("width 100vw");
+    });
+
+    $("#closeSideNavMobileSticky").click(function (e) {
+        document.getElementById("sideNavContMobileSticky").classList.remove("activeSideNav");
+        $("#sideNavContMobileSticky").hide();
+        $("#closeSideNavMobileSticky").hide();
+        $("#mobileNavStickyMenu").show();
+        console.log("width 0");
+    });
+
     // For mobile nav animation STICKY
     // $("#mobileNavStickyMenu").click(function (e) {
     //     $("#sideNavContMobileSticky").show();
