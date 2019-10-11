@@ -1302,6 +1302,10 @@ li.nav-item>a:hover {
 		display: none;
 	}
 
+	#mobileNavSticky {
+		/* top: 420px; */
+	}
+
 	#mobileNavSticky.showStickyNav {
 		display: block;
 	}
@@ -1316,6 +1320,10 @@ li.nav-item>a:hover {
 		width: 100vw;
 		height: 101vh;
 		background-color: #000;
+	}
+
+	#navPlaceholderMobileTop {
+		display: block;
 	}
 
 	.topNav {
@@ -1368,7 +1376,7 @@ li.nav-item>a:hover {
 	}
 
 	#closeSideNavMobileNav>img {
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 
 	.menuIcon>img {
@@ -1425,7 +1433,7 @@ li.nav-item>a:hover {
 	}
 
 	#closeSideNavMobileNav {
-		max-width: 65px;
+		max-width: 60px;
 	}
 
 	#activeNavLogo {

@@ -49,6 +49,7 @@ $(document).ready(function () {
         $("#sideNavContMobileSticky").hide();
         $("#closeSideNavMobileSticky").hide();
         $("#mobileNavStickyMenu").show();
+        $("#navPlaceholderMobileTop").show();
         console.log("width 0");
     });
 
@@ -82,23 +83,34 @@ $(document).ready(function () {
     }
     addFadeIn("tagline");
 
-    var fixed = document.getElementById('mobileNavTop');
+    var fixed = document.getElementById('mobileNavSticky');
 
     fixed.addEventListener('touchmove', function (e) {
         e.preventDefault();
     }, false);
 
     var body = document.getElementsByTagName("body")[0];
-    var parent = document.getElementById("parent-div");
-    var child = document.getElementById("child-div");
-    body.onScroll = function () {
-        if (document.documentElement.scrollTop >= child.offsetTop) {
-            child.style.display = "block";
+    var parent = document.getElementById("officeBreak");
+    var child = document.getElementById("mobileNavSticky");
+    window.addEventListener("scroll", function () {
+        showMobileNav()
+    });
+
+    function showMobileNav() {
+        var topDiv = document.getElementById("fullVH");
+        var y = topDiv.scrollTop;
+        console.log("onScroll firing + " + y);
+        if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+            console.log("scroll display function -- SHOW mobile hamburger")
+            child.classList.add("showStickyNav")
+        } else {
+            console.log("scroll display function -- HIDE mobile hamburger")
+
+            child.classList.remove("showStickyNav");
         }
     }
 
 });
-
 //Add class FadeIn to each child element of parent element w/ special identifier
 // delayed by 0.X seconds per each iteration of loop
 /*  1) Pass in ID of parent div
